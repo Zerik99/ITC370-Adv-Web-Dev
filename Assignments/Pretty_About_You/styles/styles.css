@@ -1,0 +1,52 @@
+* {
+  font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+}
+body {
+  margin-left: 13%;
+  margin-right: 13%;
+  padding: 2%;
+  background-color: rgb(5, 34, 34);
+}
+.body {
+  padding: 1%;
+  background-color: darkcyan;
+  display: flex;
+}
+.title {
+  padding: 1%;
+}
+p {
+  margin: 5px;
+}
+.nav {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+.nav_item {
+  display: block;
+
+  font-size: 20px;
+}
+.nav_item a {
+  text-decoration: none;
+  color: slategray;
+}
+.nav_item.selected a {
+  background-color: slategray;
+  padding: 5px;
+  text-decoration: none;
+  color: black;
+}
+.list {
+  display: flex;
+  flex-flow: wrap;
+  justify-content: space-around;
+  align-items: initial;
+}
+.list_item {
+  display: flex;
+  margin: 5px;
+  padding: 2px;
+  font-size: 20px;
+}
