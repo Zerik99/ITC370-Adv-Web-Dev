@@ -64,7 +64,6 @@ p {
   margin-right: 6vw;
 }
 .body {
-  display: flexbox;
   margin-left: 30vh;
   margin-right: 30vh;
   min-height: 73vh;
@@ -73,7 +72,6 @@ p {
   background-color: lightseagreen;
 }
 .photogalleries {
-  display: flexbox;
   justify-content: space-around;
 }
 .senior {
