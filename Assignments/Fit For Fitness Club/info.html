@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!--Erik Zander 9-25-21 -->
+    <meta charset="utf-8" />
+    <title></title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header>
+      <nav>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="classes.html">Classes</a></li>
+          <li><a href="info.html">Info</a></li>
+        </ul>
+      </nav>
+    </header>
+    <div class="formSection">
+      <form action="thankyou.html">
+        <h2>General Info:</h2>
+
+        <label for="firstName">First Name:</label>
+        <input type="text" id="firstName" name="firstName" />
+        <label for="lastName">Last Name:</label>
+        <input type="text" id="lastName" name="lastName" />
+        <label for="phoneNumber">Phone Number:</label>
+        <input type="text" id="phoneNumber" name="phoneNumber" />
+        <label for="email">Email Address:</label>
+        <input type="text" id="email" name="email" />
+
+        <h2>Preferred Contact Method:</h2>
+
+        <input type="radio" id="method1" name="contact" value="email" />
+        <label for="method1">I prefer Email</label>
+
+        <input type="radio" id="method2" name="contact" value="phone" />
+        <label for="method2">I prefer Phone</label>
+
+        <h2>Available Classes:</h2>
+
+        <input
+          type="checkbox"
+          id="class1"
+          name="class1"
+          value="crossTraining"
+        />
+        <label for="class1">Cross Training</label>
+        <input type="checkbox" id="class2" name="class2" value="sprint" />
+        <label for="class2">Sprint</label>
+        <input type="checkbox" id="class3" name="class3" value="spin" />
+        <label for="class3">Spin</label>
+        <input type="checkbox" id="class4" name="class4" value="bodyPump" />
+        <label for="class4">Body Pump</label>
+        <input type="checkbox" id="class5" name="class5" value="bodyCombat" />
+        <label for="class5">Body Combat</label>
+        <input type="checkbox" id="class6" name="class6" value="stepInterval" />
+        <label for="class6">Step Interval</label>
+        <input
+          type="checkbox"
+          id="class7"
+          name="class7"
+          value="advancedCrossTraining"
+        />
+        <label for="class7">Advanced Cross Training</label>
+        <input type="checkbox" id="class8" name="class8" value="mixxedFIT" />
+        <label for="class8">MixxedFIT</label>
+        <input type="checkbox" id="class9" name="class9" value="zumba" />
+        <label for="class9">Zumba</label>
+
+        <h2>Preferred Time of Day</h2>
+
+        <input type="radio" id="am" name="time" value="am" />
+        <label for="am">A.M.</label>
+
+        <input type="radio" id="pm" name="time" value="pm" />
+        <label for="am">P.M.</label>
+
+        <input type="submit" value="Submit" />
+      </form>
+    </div>
+
+    <footer>
+      <ul>
+        <li>Facebook</li>
+        <li>Twitter</li>
+        <li>Instagram</li>
+      </ul>
+    </footer>
+  </body>
+</html>
