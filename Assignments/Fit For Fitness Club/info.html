@@ -16,75 +16,121 @@
         </ul>
       </nav>
     </header>
-    <div class="formSection">
-      <form action="thankyou.html">
-        <h2>General Info:</h2>
+    <div class="mainContent">
+      <div class="content">
+        <form action="thankyou.html" method="GET">
+          <div class="generalSection">
+            <h2>General Info:</h2>
 
-        <label for="firstName">First Name:</label>
-        <input type="text" id="firstName" name="firstName" />
-        <label for="lastName">Last Name:</label>
-        <input type="text" id="lastName" name="lastName" />
-        <label for="phoneNumber">Phone Number:</label>
-        <input type="text" id="phoneNumber" name="phoneNumber" />
-        <label for="email">Email Address:</label>
-        <input type="text" id="email" name="email" />
-
-        <h2>Preferred Contact Method:</h2>
-
-        <input type="radio" id="method1" name="contact" value="email" />
-        <label for="method1">I prefer Email</label>
-
-        <input type="radio" id="method2" name="contact" value="phone" />
-        <label for="method2">I prefer Phone</label>
-
-        <h2>Available Classes:</h2>
-
-        <input
-          type="checkbox"
-          id="class1"
-          name="classes"
-          value="crossTraining"
-        />
-        <label for="class1">Cross Training</label>
-        <input type="checkbox" id="class2" name="classes" value="sprint" />
-        <label for="class2">Sprint</label>
-        <input type="checkbox" id="class3" name="classes" value="spin" />
-        <label for="class3">Spin</label>
-        <input type="checkbox" id="class4" name="classes" value="bodyPump" />
-        <label for="class4">Body Pump</label>
-        <input type="checkbox" id="class5" name="classes" value="bodyCombat" />
-        <label for="class5">Body Combat</label>
-        <input
-          type="checkbox"
-          id="class6"
-          name="classes"
-          value="stepInterval"
-        />
-        <label for="class6">Step Interval</label>
-        <input
-          type="checkbox"
-          id="class7"
-          name="classes"
-          value="advancedCrossTraining"
-        />
-        <label for="class7">Advanced Cross Training</label>
-        <input type="checkbox" id="class8" name="classes" value="mixxedFIT" />
-        <label for="class8">MixxedFIT</label>
-        <input type="checkbox" id="class9" name="classes" value="zumba" />
-        <label for="class9">Zumba</label>
-
-        <h2>Preferred Time of Day</h2>
-
-        <input type="radio" id="am" name="time" value="am" />
-        <label for="am">A.M.</label>
-
-        <input type="radio" id="pm" name="time" value="pm" />
-        <label for="am">P.M.</label>
-
-        <input type="submit" value="Submit" />
-      </form>
+            <label for="firstName">First Name:</label><br />
+            <input type="text" id="firstName" name="firstName" /><br />
+            <label for="lastName">Last Name:</label><br />
+            <input type="text" id="lastName" name="lastName" /><br />
+            <label for="phoneNumber">Phone Number:</label><br />
+            <input type="text" id="phone" name="phone" /><br />
+            <label for="email">Email Address:</label><br />
+            <input type="text" id="email" name="email" /><br />
+          </div>
+          <div class="contactSection">
+            <h2>Preferred Contact Method:</h2>
+            <div>
+              <input type="radio" id="email" name="contact" value="email" />
+              <label for="method1">I prefer Email</label>
+            </div>
+            <div>
+              <input type="radio" id="phone" name="contact" value="phone" />
+              <label for="method2">I prefer Phone</label>
+            </div>
+          </div>
+          <div class="classesSection">
+            <h2>Available Classes:</h2>
+            <div>
+              <input
+                type="checkbox"
+                id="class1"
+                name="classes"
+                value="crossTraining"
+              />
+              <label for="class1">Cross Training</label>
+            </div>
+            <div>
+              <input
+                type="checkbox"
+                id="class2"
+                name="classes"
+                value="sprint"
+              />
+              <label for="class2">Sprint</label>
+            </div>
+            <div>
+              <input type="checkbox" id="class3" name="classes" value="spin" />
+              <label for="class3">Spin</label>
+            </div>
+            <div>
+              <input
+                type="checkbox"
+                id="class4"
+                name="classes"
+                value="bodyPump"
+              />
+              <label for="class4">Body Pump</label>
+            </div>
+            <div>
+              <input
+                type="checkbox"
+                id="class5"
+                name="classes"
+                value="bodyCombat"
+              />
+              <label for="class5">Body Combat</label>
+            </div>
+            <div>
+              <input
+                type="checkbox"
+                id="class6"
+                name="classes"
+                value="stepInterval"
+              />
+              <label for="class6">Step Interval</label>
+            </div>
+            <div>
+              <input
+                type="checkbox"
+                id="class7"
+                name="classes"
+                value="advancedCrossTraining"
+              />
+              <label for="class7">Advanced Cross Training</label>
+            </div>
+            <div>
+              <input
+                type="checkbox"
+                id="class8"
+                name="classes"
+                value="mixxedFIT"
+              />
+              <label for="class8">MixxedFIT</label>
+            </div>
+            <div>
+              <input type="checkbox" id="class9" name="classes" value="zumba" />
+              <label for="class9">Zumba</label>
+            </div>
+            <h2>Preferred Time of Day</h2>
+            <div>
+              <input type="radio" id="am" name="time" value="am" />
+              <label for="am">A.M.</label>
+            </div>
+            <div>
+              <input type="radio" id="pm" name="time" value="pm" />
+              <label for="am">P.M.</label>
+            </div>
+          </div>
+          <div>
+            <input class="button" type="submit" value="Submit" />
+          </div>
+        </form>
+      </div>
     </div>
-
     <footer>
       <ul>
         <li>Facebook</li>
