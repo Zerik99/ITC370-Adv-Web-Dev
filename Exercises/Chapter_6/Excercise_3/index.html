@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Excercise 3: Print Styles</title>
+    <style>
+      header,
+      section,
+      aside,
+      footer {
+        font-size: 20px;
+        text-align: center;
+        padding: 10px;
+        background: 20px;
+        margin-bottom: 20px;
+      }
+      main {
+        display: flex;
+      }
+      section {
+        flex: 1 1 auto;
+        margin-right: 20px;
+      }
+      aside {
+        flex: 0 0 200px;
+      }
+      @media only print {
+        footer,
+        aside {
+          display: none;
+        }
+
+        header,
+        section {
+          margin-right: 0;
+          background: transparent;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <header>Header</header>
+    <main>
+      <section>content</section>
+      <aside>Sidebar</aside>
+    </main>
+    <footer>Footer</footer>
+  </body>
+</html>

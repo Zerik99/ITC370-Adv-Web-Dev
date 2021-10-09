@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta name="Viewport" content="width=device-width, initial-scale=1" />
+    <title>Exercise 1: Responsive Navigation</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+      }
+      nav ul {
+        list-style: none;
+      }
+      nav a {
+        color: white;
+        background: black;
+        font-weight: bold;
+        display: block;
+        padding: 15px;
+        font-size: 15px;
+        text-decoration: none;
+      }
+      nav a:hover {
+        background: cadetblue;
+      }
+
+      @media (min-width: 480px) {
+        nav ul {
+          display: flex;
+        }
+        nav li {
+          flex: 1 1 auto;
+        }
+      }
+      @media only screen and (min-width: 768px) {
+        nav a {
+          font-size: 20px;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <nav>
+      <ul>
+        <li><a href="">Videos to rent</a></li>
+        <li><a href="">Videos to buy</a></li>
+        <li><a href="">used dvds</a></li>
+        <li><a href="">offers</a></li>
+      </ul>
+    </nav>
+  </body>
+</html>
