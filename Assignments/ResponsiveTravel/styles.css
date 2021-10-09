@@ -10,7 +10,7 @@ body {
   align-items: center;
   background-color: #f2d5bb;
   width: 100vw;
-  height: 100vw;
+  height: 100vh;
   margin: 0;
   padding: 0;
 }
@@ -59,4 +59,33 @@ p {
   margin: 0;
   padding: 10px;
   background-color: #a7e4f2;
+}
+@media only print {
+  img {
+    display: none;
+  }
+}
+@media (orientation: landscape) {
+  .imgSection {
+    display: grid;
+    grid-template-columns: repeat(2, 48vw);
+  }
+  img {
+    width: 40vw;
+  }
+  p {
+    font-size: 2.5vw;
+  }
+  @media (min-width: 1200px) {
+    .imgSection {
+      display: grid;
+      grid-template-columns: repeat(3, 33vw);
+    }
+    img {
+      width: 26vw;
+    }
+    p {
+      font-size: 1.5vw;
+    }
+  }
 }
