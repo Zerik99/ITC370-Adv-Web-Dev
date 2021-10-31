@@ -1,0 +1,87 @@
+.navbar {
+  background-color: cadetblue !important;
+  display: flex !important;
+}
+.nav-link {
+  color: black;
+  font-weight: bold;
+}
+.Title {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.outerContainer {
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+  margin-top: 5vh;
+}
+.carousel {
+  width: 75vw;
+  margin: 10px;
+  border-radius: 5px;
+  border: 5px solid cadetblue;
+}
+.carousel-item {
+  height: 32rem;
+  background: black;
+  color: black;
+  position: relative;
+  background-position: center;
+  background-size: cover;
+  border-radius: 5px;
+}
+
+.innerContainer {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  padding-bottom: 50px;
+  border-radius: 5px;
+}
+.crslText {
+  display: flex;
+  background-color: cadetblue;
+  opacity: 0.9;
+  border-radius: 5px;
+  width: 45vw;
+}
+.cardContainer {
+  width: 75vw;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+.card {
+  border: 5px solid cadetblue;
+}
+.leftColumn {
+  width: 35vw;
+  height: 51vh;
+}
+.rightColumn {
+  width: 40vw;
+}
+.footer {
+  margin-top: 10vh;
+  display: flex;
+  flex-direction: row;
+  height: 15vh;
+  width: 100vw;
+  background-image: url(Images/images/background.png);
+}
+.footerList {
+  margin-top: 10vh;
+  display: flex;
+  justify-content: space-around;
+  height: 5vh;
+  width: 100vw;
+  background-color: cadetblue;
+}
+.footerListItem {
+  font-size: 1.5vw;
+}
