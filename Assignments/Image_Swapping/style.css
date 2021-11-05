@@ -1,0 +1,47 @@
+body {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-content: center;
+}
+.img-Main {
+  width: 35vw;
+  border: 5px solid grey;
+  border-radius: 3px;
+}
+.img-Main:hover {
+  cursor: pointer;
+  width: 35vw;
+  border: 5px solid grey;
+  border-radius: 3px;
+}
+.img-thumbnail {
+  width: 15vw;
+  height: 10vw;
+  background-color: grey;
+}
+.img-thumbnail:hover {
+  cursor: pointer;
+  width: 15vw;
+  height: 10vw;
+  background-color: grey;
+}
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 75vw;
+  margin-left: 12.5vw;
+}
+.containerImg {
+  margin: 0;
+  padding: 0;
+}
+.containerThumbnail {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  width: 75vw;
+  margin-top: 20px;
+  margin-left: 0px;
+}
