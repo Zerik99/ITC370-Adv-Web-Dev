@@ -16,26 +16,57 @@ thumbnail3.addEventListener("click", ChangeMainImage3);
 thumbnail4.addEventListener("click", ChangeMainImage4);
 
 function ChangeMainImage1(){
-largeImage.src = "images/Picture1.jpg";
+largeImage.src = thumbnail1.src;
 console.log("ChangeMainImage1 function was called.");
 }
 function ChangeMainImage2(){
-largeImage.src = "images/Picture2.jpg";
+largeImage.src = thumbnail2.src;
 console.log("ChangeMainImage2 function was called.");
 }
 function ChangeMainImage3(){
-largeImage.src = "images/Picture3.jpg";
+largeImage.src = thumbnail3.src;
 console.log("ChangeMainImage3 function was called.");
 }
 function ChangeMainImage4(){
-largeImage.src = "images/Picture4.jpg";
+largeImage.src = thumbnail4.src;
 console.log("ChangeMainImage4 function was called.");
 }
 function ChangeImageSet(){
+
+    if(largeImage.class != "img-Main dogImg")
+    {
     largeImage.src = "images/Picture5.jpg";
+    largeImage.class = "img-Main dogImg";
+
     thumbnail1.src = "images/Picture5.jpg";
+    thumbnail1.class = "img-thumbnail dogImg";
+
     thumbnail2.src = "images/Picture6.jpg";
+    thumbnail2.class = "img-thumbnail dogImg";
+
     thumbnail3.src = "images/Picture7.jpg";
+    thumbnail3.class = "img-thumbnail dogImg";
+
     thumbnail4.src = "images/Picture8.jpg";
+    thumbnail4.class = "img-thumbnail dogImg";
+    }
+    else
+    {
+    largeImage.src = "images/Picture1.jpg";
+    largeImage.class = "img-Main catImg";
+
+    thumbnail1.src = "images/Picture1.jpg";
+    thumbnail1.class = "img-thumbnail catImg";
+
+    thumbnail2.src = "images/Picture2.jpg";
+    thumbnail2.class = "img-thumbnail dogImg";
+
+    thumbnail3.src = "images/Picture3.jpg";
+    thumbnail3.class = "img-thumbnail catImg";
+
+    thumbnail4.src = "images/Picture4.jpg";
+    thumbnail4.class = "img-thumbnail catImg";
+    }
+
 console.log("ChangeImageSet function was called.");
 }
